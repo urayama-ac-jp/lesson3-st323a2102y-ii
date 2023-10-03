@@ -4,8 +4,10 @@ public class Comment {
 
   private String name;
   private String content;
+  private String mail;
 
   public Comment(String name, String content) {
+    this.setMail(mail);
     this.setName(name);
     this.setContent(content);
   }
@@ -24,5 +26,13 @@ public class Comment {
 
   public void setContent(String content) {
     this.content = content;
+  }
+
+  public String getMail() {
+    return mail;
+  }
+
+  public void setMail(String mail) {
+    this.mail = mail;
   }
 }
